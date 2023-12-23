@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<body style="background-color:LightSteelBlue;">
+		<script>
+ 
+		/* Дан массив A размера N. Сформировать новый массив В того же размера по следующему
+		правилу: элемент Вк равен среднему арифметическому элементов массива А с номерами от 1 до К. */
+		
+		"use strict"
+		let A = [2, 99, 13, 14, 8, 41, 23, 17, 25, 0, 11, 50], new_arr = [], N = A.length, Summa = 0, Average = 0;
+		for (let i = 0; i < N; i++) {
+			Summa += A[i];
+			Average = (Summa / ( i + 1 ));
+			new_arr.push(Math.floor(Average));
+		}
+		alert("Массив чисел: " + A);
+		alert("Новый массив: " +  new_arr);	
+		
+		
+		</script> 
+	</body>
+</html>
